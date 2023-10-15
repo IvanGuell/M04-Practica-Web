@@ -3,7 +3,8 @@ body {
 }
 #logo{
     background-color: #0A91AB;
-    padding-bottom: 4%;
+    padding-bottom: 1%;
+
 }
 img{
     display: block;
@@ -16,9 +17,15 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
+    transition: all 0.5s ease-in-out;
+    position: sticky;
+    top: 0;
 
-.boton{
+}
+.menu:hover {
+    transform: scale(1.2);
+}
+.botonMenu{
     text-align: center;
     padding-left: 0.75%;
     padding-top: 0.8%;
@@ -26,17 +33,18 @@ img{
     padding-right: 0.75%;
 }
 .Novedades{
-color: #0A91AB
+    color: #0A91AB;
+    padding-left: 1%;
 }
-.containerNov{
+.containerNovedades{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 5%;
-
+    margin: 1%;
+    margin-top: 0.01%;
 
 }
-.imagenCab{
+.imagenJuego{
     width: 100%;
     height: 100%;
     margin: 0%;
@@ -44,11 +52,103 @@ color: #0A91AB
 .juego{
     margin: 1%;
     border-color: #FFC045;
-    width: 30%;
-    border-radius: 10px;
+    width: 25%;
+    border-radius: 1%;
     border-style: dashed;
     text-align: center;
 }
-.botonSeguir{
+.tituloJuego{
+    text-align: start;
+    padding-left: 1.5%;
+    color: #FFC045;
+}
+.descripcionJuego{
+    text-align: left;
+    padding-left: 1.5%;
+    padding-bottom: 5%;
+}
+.botonMasInfo{
     background-color: #FFC045;
+    width: 10%;
+    border-radius: 10%;
+    height: 5%;
+    margin-bottom: 1%;
+    margin-left: 89%;
+}
+.masInfo{
+    padding-top: 5%;
+}
+.noticias{
+    color: #0A91AB;
+    padding-left:50%;
+}
+.containerNoticias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin: 1%;
+    margin-top: 0.01%
+}    
+.imagenNoticia {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    margin-bottom: 0.7%;
+}
+.noticia{
+    margin-left: 5%;
+    margin-top: 1%;
+    border-color: #0A91AB;
+    width: 40%;
+    border-radius: 1%;
+    border-style: solid;
+    text-align: center;
+}
+.fecha {
+    display: block;
+    margin-top: 1%;
+    text-align: start;
+    font-weight: bold;
+
+  }
+.separador{
+    border: none;
+    background-color: #FFC045;
+    height: 1%;
+    margin: 1%;
+}
+.tituloNoticia{
+    text-align: center;
+    padding-left: 1.5%;
+    color: #FFC045;
+}
+.contenidoNoticia{
+    text-align: left;
+    padding-left: 1.5%;
+    padding-bottom: 5%;
+    font-weight: bold;
+}
+.botonLeerMas{
+    background-color: #FFC045;
+    width: 10%;
+    border-radius: 10%;
+    height: 5%;
+    margin-bottom: 1%;
+    margin-left: 89%;
+}
+.leerMas{
+    padding-top: 5%;
+}
+.trucos{
+    background-color:  #0A90AB25;
+    border-style: dotted;
+    float: left;
+    width: 15%;
+    padding-bottom: 60%;
+    margin: 1%;
+    border-radius: 1%;
+}
+.piePagina{
+    background-color:  #8A8070;
+    margin-bottom: 0%;
 }
