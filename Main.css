@@ -80,7 +80,7 @@ img{
 }
 .noticias{
     color: #0A91AB;
-    padding-left:50%;
+    padding-left:53%;
 }
 .containerNoticias{
     display: flex;
@@ -144,11 +144,77 @@ img{
     border-style: dotted;
     float: left;
     width: 15%;
-    padding-bottom: 60%;
+    padding-bottom: 69%;
     margin: 1%;
     border-radius: 1%;
+}
+.containerRanking{
+    display: flex;
+    flex-direction:row;
+    margin: 5%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.persona{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.imagenRanking {
+    display: flex;
+    position: relative;
+    flex-direction:row;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: -5px;
+    object-fit: cover;
+    object-position: center center;
+    top: -25px;
+  }
+  
+  
+.nombre{
+    color:#FFC045 ;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    margin-top: -10px;
+}
+.puntuacion{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-top: -10px;
 }
 .piePagina{
     background-color:  #8A8070;
     margin-bottom: 0%;
+    padding-bottom: 1%;
+    
+}
+.menuPie{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0%;
+}
+.botonPie{
+    padding-left: 0.75%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    padding-right: 0.75%;
+}
+.direccion{
+    justify-content: right;
+    display: flex;
+    flex-direction: row;
+}
+.copyright{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
 }
