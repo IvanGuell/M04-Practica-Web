@@ -1,5 +1,6 @@
 body {
     margin: 0%;
+    height: 100%;
 }
 #logo{
     background-color: #0A91AB;
@@ -12,7 +13,7 @@ img{
     margin: auto;
 }
 
-.menu{
+#menu{
     background-color: #FFC045;
     display: flex;
     flex-direction: row;
@@ -20,9 +21,11 @@ img{
     transition: all 0.5s ease-in-out;
     position: sticky;
     top: 0;
-
 }
-.menu:hover {
+#menu a{
+    text-decoration: none;
+}
+#menu:hover {
     transform: scale(1.2);
 }
 .botonMenu{
@@ -58,11 +61,13 @@ img{
     text-align: center;
 }
 .tituloJuego{
+    margin-bottom: 0.70%;
     text-align: start;
     padding-left: 1.5%;
     color: #FFC045;
 }
 .descripcionJuego{
+    margin-top: 0.75%;
     text-align: left;
     padding-left: 1.5%;
     padding-bottom: 5%;
@@ -76,11 +81,12 @@ img{
     margin-left: 89%;
 }
 .masInfo{
+    background-color: #FFC045;
     padding-top: 5%;
 }
 .noticias{
     color: #0A91AB;
-    padding-left:53%;
+    padding-left:56%;
 }
 .containerNoticias{
     display: flex;
@@ -143,8 +149,8 @@ img{
     background-color:  #0A90AB25;
     border-style: dotted;
     float: left;
-    width: 15%;
-    padding-bottom: 69%;
+    width: 20%;
+    height: 1250px;
     margin: 1%;
     border-radius: 1%;
 }
@@ -217,4 +223,33 @@ img{
     justify-content: center;
     display: flex;
     flex-direction: row;
+}
+
+/*Cambio de pagina, contactos*/
+#formContacto{
+    border-style: solid;
+    width: 520px;
+    height: 270px;
+    display: flex;
+    flex-direction:row;
+
+    margin-top: -10px;
+}
+form{
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    float: left;
+}
+input{
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+} 
+input[type="submit"]{
+    width: 100px;
+    background-color: #139ed8;
+    color: white;
+    cursor: pointer;
+    float: right;
 }
