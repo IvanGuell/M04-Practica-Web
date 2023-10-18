@@ -24,6 +24,7 @@ img{
 }
 #menu a{
     text-decoration: none;
+    
 }
 #menu:hover {
     transform: scale(1.2);
@@ -34,6 +35,10 @@ img{
     padding-top: 0.8%;
     padding-bottom: 0.8%;
     padding-right: 0.75%;
+}
+.botonMenu:hover{
+    color: #139ed8;
+    cursor: pointer;
 }
 .Novedades{
     color: #0A91AB;
@@ -53,6 +58,8 @@ img{
     margin: 0%;
 }
 .juego{
+    display: flex;
+    flex-direction: column;
     margin: 1%;
     border-color: #FFC045;
     width: 25%;
@@ -77,8 +84,7 @@ img{
     width: 10%;
     border-radius: 10%;
     height: 5%;
-    margin-bottom: 1%;
-    margin-left: 89%;
+    align-self: flex-end;
 }
 .masInfo{
     background-color: #FFC045;
@@ -201,7 +207,7 @@ img{
     background-color:  #8A8070;
     margin-bottom: 0%;
     padding-bottom: 1%;
-    
+    margin-top: 1%;
 }
 .menuPie{
     display: flex;
@@ -227,19 +233,47 @@ img{
 
 /*Cambio de pagina, contactos*/
 #formContacto{
-    border-style: solid;
-    width: 520px;
-    height: 270px;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    flex-wrap: wrap;
 
-    margin-top: -10px;
+}
+#map{
+    border-style: solid;
+    width: 600px;
+    height: 680px;
+    margin-top: 10px;
+}
+#direccion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+    color: #139ed8;
+}
+#direccion img{
+margin: 5%;
 }
 form{
+    
     width: 500px;
-    margin: 0 auto;
+    height: 300px;
+    margin: 0;
     padding: 10px;
-    float: left;
+    border-style: solid;
+}
+form p{
+    color: #139ed8;
+    font-weight: bold;
+}
+form hr{
+    border: none;
+    background-color: #139ed8;
+    border-color: #139ed8;
+    height: 1%;
 }
 input{
     width: 96%;

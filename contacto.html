@@ -19,16 +19,44 @@
         </nav>
         <main>
             <div id="formContacto">
-              <form>
-                <input type="text" nombre="nombre" placeholder="Nombre">
-                <input type="text" nombre="apellidos" placeholder="Apellidos">
-                <input type="email" nombre="email" placeholder="Email">
-                <input type="tel" nombre="telefono" placeholder="Teléfono">
-                <input type="text" nombre="pais" placeholder="Pais">
-                <input type="submit" value="Enviar">
-              </form>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d634.1505519704693!2d2.1866112490830805!3d41.45313140806993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sca!2ses!4v1697542718389!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div id="direccion">
+                        <img src="./Images/gmpoint.png" alt="myimage">
+                        <figcaption>Calle Aiguabava, 123, 08033</figcaption>
+                    </div>
+                    <div id="direccion">
+                        <img src="./Images/ph.jpg" alt="myimage">
+                        <figcaption>937 070 020</figcaption>
+                    </div>
+                    
+                </div>
+                <form>
+                    <p>CONTACTANOS</p>
+                    <hr>
+                    <input type="text" nombre="nombre" placeholder="Nombre">
+                    <input type="text" nombre="apellidos" placeholder="Apellidos">
+                    <input type="email" nombre="email" placeholder="Email">
+                    <input type="tel" nombre="telefono" placeholder="Teléfono">
+                    <input type="text" nombre="pais" placeholder="Pais">
+                    <input type="submit" value="Enviar">
+                </form>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d634.1505519704693!2d2.1866112490830805!3d41.45313140806993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sca!2ses!4v1697542718389!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
+
         </main>
     </body>
+    <footer>
+        <div class="piePagina">
+            <nav class="menuPie"> 
+                <div class="botonPie"> FACEBOOK</div>
+                <div class="botonPie"> TWITTER </div>
+                <div class="botonPie"> INSTAGRAM </div>
+                <div class="botonPie"> RSS </div>
+            </nav>
+            <div>
+            <p class="direccion">Carrer d'aiguablava 121</p>
+            <p class="direccion">08033 Barcelona</p>
+            </div>
+            <p class="copyright">Copyright 2023-2023 Institut Tecnologic de Barcelona</p>
+        </div>
+    </footer>
