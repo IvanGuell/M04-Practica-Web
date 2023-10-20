@@ -14,6 +14,7 @@ img{
 }
 
 #menu{
+    z-index: 1;
     background-color: #FFC045;
     display: flex;
     flex-direction: row;
@@ -22,12 +23,14 @@ img{
     position: sticky;
     top: 0;
 }
-#menu a{
+a {
     text-decoration: none;
+    color: black;
     
 }
 #menu:hover {
     transform: scale(1.2);
+    cursor: pointer;
 }
 .botonMenu{
     text-align: center;
@@ -37,8 +40,9 @@ img{
     padding-right: 0.75%;
 }
 .botonMenu:hover{
-    color: #139ed8;
+    transform: scale(1.2);
     cursor: pointer;
+    color: blue;
 }
 .Novedades{
     color: #0A91AB;
@@ -86,6 +90,12 @@ img{
     height: 5%;
     align-self: flex-end;
 }
+.botonMasInfo:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    color: blue;
+    background-color: #0A91AB;
+}
 .masInfo{
     background-color: #FFC045;
     padding-top: 5%;
@@ -107,6 +117,25 @@ img{
     margin: 0%;
     margin-bottom: 0.7%;
 }
+#containerImagen{
+    position: relative;
+}
+.botonLeerMas{
+    position: absolute;
+    background-color: #FFC045;
+    width: 15%;
+    border-radius: 20%;
+    height: 10%;
+    bottom: 85%;
+    right: 2%;
+}
+.botonLeerMas:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    color: blue;
+    background-color: #0A91AB;
+}
+
 .noticia{
     margin-left: 5%;
     margin-top: 1%;
@@ -139,17 +168,6 @@ img{
     padding-left: 1.5%;
     padding-bottom: 5%;
     font-weight: bold;
-}
-.botonLeerMas{
-    background-color: #FFC045;
-    width: 10%;
-    border-radius: 10%;
-    height: 5%;
-    margin-bottom: 1%;
-    margin-left: 89%;
-}
-.leerMas{
-    padding-top: 5%;
 }
 .trucos{
     background-color:  #0A90AB25;
@@ -203,48 +221,78 @@ img{
     justify-content: center;
     margin-top: -10px;
 }
-.piePagina{
+footer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color:  #8A8070;
     margin-bottom: 0%;
-    padding-bottom: 1%;
+    padding-bottom: 0%;
     margin-top: 1%;
 }
 .menuPie{
     display: flex;
     flex-direction: row;
     padding-left: 0%;
+    width: 10%;
+    margin-left: 1%;
+    margin-top: 0.3%;
 }
 .botonPie{
+    text-decoration: none;
     padding-left: 0.75%;
     padding-top: 0.8%;
     padding-bottom: 0.8%;
     padding-right: 0.75%;
+}
+.botonPie:hover {
+    color: blue;
+    cursor: pointer;
+}
+#containerDireccion{
+    width: 15%;  
+    margin-right: 1%;
+    margin-top: -10px;
+
 }
 .direccion{
     justify-content: right;
     display: flex;
     flex-direction: row;
 }
-.copyright{
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
+#containerCopy{
+    position:relative;
+    width: 30%;
+    margin-bottom: 0%;
 }
+.copyright{
+    position: absolute;
+    bottom: 0.5%;
+    margin-bottom: 0.5%;
+    left: 30%;
+}
+/*Cambio de pagina, listado*/
+#bgListado{
+    background-image: url(./Images/spiderman2.jpeg);
+    height: 100%;
+}
+
+
 
 /*Cambio de pagina, contactos*/
 #formContacto{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 10px;
+    margin-top: 30px;
     flex-wrap: wrap;
-
 }
 #map{
     border-style: solid;
     width: 600px;
     height: 680px;
-    margin-top: 10px;
+
 }
 #direccion{
     display: flex;
@@ -255,7 +303,7 @@ img{
     color: #139ed8;
 }
 #direccion img{
-margin: 5%;
+    margin: 5%;
 }
 form{
     
