@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap');
+
+
 body {
     margin: 0%;
     height: 100%;
 }
+
 #logo{
     background-color: #0A91AB;
     padding-bottom: 1%;
 
 }
+
 img{
     display: block;
     width: 10%;
@@ -23,15 +29,18 @@ img{
     position: sticky;
     top: 0;
 }
+
 a {
     text-decoration: none;
     color: black;
     
 }
+
 #menu:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
+
 .botonMenu{
     text-align: center;
     padding-left: 0.75%;
@@ -39,15 +48,18 @@ a {
     padding-bottom: 0.8%;
     padding-right: 0.75%;
 }
+
 .botonMenu:hover{
     transform: scale(1.2);
     cursor: pointer;
     color: blue;
 }
+
 .Novedades{
     color: #0A91AB;
     padding-left: 1%;
 }
+
 .containerNovedades{
     display: flex;
     flex-wrap: wrap;
@@ -56,11 +68,13 @@ a {
     margin-top: 0.01%;
 
 }
+
 .imagenJuego{
     width: 100%;
     height: 100%;
     margin: 0%;
 }
+
 .juego{
     display: flex;
     flex-direction: column;
@@ -71,42 +85,53 @@ a {
     border-style: dashed;
     text-align: center;
 }
+
 .juego:hover{
     box-shadow: 10px 10px 5px gray;
 }    
+
 .tituloJuego{
     margin-bottom: 0.70%;
     text-align: start;
     padding-left: 1.5%;
     color: #FFC045;
 }
+
 .descripcionJuego{
+    font-family: Maven Pro;
     margin-top: 0.75%;
     text-align: left;
     padding-left: 1.5%;
     padding-bottom: 5%;
 }
+
 .botonMasInfo{
     background-color: #FFC045;
     width: 10%;
     border-radius: 10%;
     height: 5%;
     align-self: flex-end;
+
 }
+
 .botonMasInfo:hover{
     transform: scale(1.2);
     cursor: pointer;
     color: blue;
     background-color: #0A91AB;
 }
+
 .masInfo{
     background-color: #FFC045;
     padding-top: 5%;
+    
 }
+
 .noticias{
     color: #0A91AB;
     padding-left:56%;
 }
+
 .containerNoticias{
     display: flex;
     flex-wrap: wrap;
@@ -114,33 +139,10 @@ a {
     margin: 1%;
     margin-top: 0.01%
 }
+
 .noticia:hover{
     box-shadow: 10px 10px 5px gray;
 }    
-.imagenNoticia {
-    width: 100%;
-    height: 100%;
-    margin: 0%;
-    margin-bottom: 0.7%;
-}
-#containerImagen{
-    position: relative;
-}
-.botonLeerMas{
-    position: absolute;
-    background-color: #FFC045;
-    width: 15%;
-    border-radius: 20%;
-    height: 10%;
-    bottom: 85%;
-    right: 2%;
-}
-.botonLeerMas:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-    color: blue;
-    background-color: #0A91AB;
-}
 
 .noticia{
     margin-left: 5%;
@@ -151,30 +153,65 @@ a {
     border-style: solid;
     text-align: center;
 }
+
 .fecha {
     display: block;
     margin-top: 1%;
     text-align: start;
     font-weight: bold;
 
-  }
+}
+
 .separador{
     border: none;
     background-color: #FFC045;
     height: 1%;
     margin: 1%;
 }
+
 .tituloNoticia{
     text-align: center;
     padding-left: 1.5%;
     color: #FFC045;
 }
+
 .contenidoNoticia{
+    font-family: Kanit;
     text-align: left;
     padding-left: 1.5%;
     padding-bottom: 5%;
     font-weight: bold;
 }
+
+.imagenNoticia {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    margin-bottom: 0.7%;
+    border-radius: 1%;
+}
+
+#containerImagen{
+    position: relative;
+}
+
+.botonLeerMas{
+    position: absolute;
+    background-color: #FFC045;
+    width: 15%;
+    border-radius: 20%;
+    height: 10%;
+    bottom: 85%;
+    right: 2%;
+}
+
+.botonLeerMas:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    color: blue;
+    background-color: #0A91AB;
+}
+
 .trucos{
     background-color:  #0A90AB25;
     border-style: dotted;
@@ -184,20 +221,48 @@ a {
     margin: 1%;
     border-radius: 1%;
 }
+
+.trucosJuego {
+    display: flex;
+    flex-direction: column;
+    border: #FFC045;
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-width: 1px;
+}
+
+.trucosJuego h1 {
+    color: #0A91AB;
+    align-self: center;
+}
+
+.trucosJuego h3 {
+    color: #FFC045;
+    align-self: center;
+}
+
+.trucosJuego h4 {
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .containerRanking{
     display: flex;
     flex-direction:row;
     margin: 5%;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
 }
+
 .persona{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
+
 .imagenRanking {
     display: flex;
     position: relative;
@@ -211,7 +276,7 @@ a {
     object-fit: cover;
     object-position: center center;
     top: -25px;
-  }
+}
   
   
 .nombre{
@@ -227,6 +292,7 @@ a {
     justify-content: center;
     margin-top: -10px;
 }
+
 footer{
     position: relative;
     display: flex;
@@ -235,8 +301,9 @@ footer{
     background-color:  #8A8070;
     margin-bottom: 0%;
     padding-bottom: 0%;
-    margin-top: 1%;
+    margin-top: 7%;
 }
+
 .menuPie{
     display: flex;
     flex-direction: row;
@@ -245,6 +312,7 @@ footer{
     margin-left: 1%;
     margin-top: 0.3%;
 }
+
 .botonPie{
     text-decoration: none;
     padding-left: 0.75%;
@@ -252,41 +320,281 @@ footer{
     padding-bottom: 0.8%;
     padding-right: 0.75%;
 }
+
 .botonPie:hover {
     color: blue;
     cursor: pointer;
 }
+
 #containerDireccion{
     width: 15%;  
     margin-right: 1%;
     margin-top: -10px;
 
 }
+
 .direccion{
     justify-content: right;
     display: flex;
     flex-direction: row;
 }
+
 #containerCopy{
     position:relative;
     width: 30%;
     margin-bottom: 0%;
 }
+
 .copyright{
     position: absolute;
     bottom: 0.5%;
     margin-bottom: 0.5%;
     left: 30%;
 }
+
+
+
 /*Cambio de pagina, listado*/
-#bgListado{
-    background-image: url(./Images/spiderman2.jpeg);
+
+#containerListado{
+    height: 68px;
+    background-color: #0A91AB;
+}
+
+#containerListado ul { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #0A91AB; 
+    display: flex; 
+    justify-content: center; 
+    padding-top: 20px;
+}
+
+#containerListado button{
+    background-color: #FFC045;
+    height: 30px;
+    font-size: large;
+    border-radius: 5px;
+}
+
+#containerListado button:hover {
+    cursor: pointer;
+    color: blue;    
+    background-color: #0A91AB; 
+}
+
+#containerListado a { 
+    color: #FFC045; 
+    font-size: 20px; 
+    text-decoration: none; 
+}
+
+#containerGeneros button{
+    height: 30px;
+}
+
+#containerGeneros button:hover {
+    border: 2px solid #000000;
+    cursor: pointer;
+
+}
+
+.juegoListado {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    border-width: 1px;
+    border-bottom: 1px;
+}
+
+.infoListado {
+    width: 40%;
+    margin-left: 5%;
+}
+
+.infoListado ul{
+    margin-left: 0.1%;
+    padding: 0;
+}
+
+.infoListado button{
+    background-color: #0A91AB;
+}
+
+.infoListado h1{
+    color: #0A91AB;
+}
+
+.infoListado h2{
+    margin-top: 0.1%;
+    margin-bottom: 0.4%;
+    padding: 0;
+}
+
+.infoListado h3{
+    margin-top: 0.1%;
+    padding: 0;
+    font-weight: normal;
+}
+
+.imagenListado {
+    width: 20%;
+    margin-left: 3%;
+
+}
+
+.imagenListado img{
+    width: 100%;
     height: 100%;
 }
 
+#paginacion {
+    list-style: none;
+    margin: 0;
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    
+}
+  
+#paginacion button {
+    padding: 8px 16px;
+    
+}
+  
+#paginacion button:hover {
+    background-color: #ddd;
+    cursor: pointer; 
+}
+  
+/*Cambio de pagina, detalles*/
 
+.juegoDetalles {
+    font-family: Maven Pro;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+
+.infoDetalles{
+    width: 40%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.infoLDetalles ul{
+    margin-left: 0.1%;
+    padding: 0;
+}
+
+.infoDetalles button{
+    background-color: #0A91AB;
+}
+
+.infoDetalles h1{
+    color: #0A91AB;
+    text-align: center;
+}
+
+.infoDetalles h2{
+    margin-top: 0.1%;
+    margin-bottom: 0.4%;
+    padding: 0;
+}
+
+.infoDetalles h3{
+    margin-top: 0.1%;
+    padding: 0;
+    font-weight: normal;
+}
+.infoDetalles article{
+    text-align: start;
+    
+}
+
+.imagenDetalles {
+    width: 20%;
+    margin-left: 3%;
+    height: 20%;
+
+}
+
+.imagenDetalles img{
+    width: 100%;
+    height: 100%;
+}
+
+.videosDetalles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.videosDetalles iframe {
+margin: 10px;
+}
+
+aside{
+    width: 10%;
+    border-style: dotted;
+    border-color: #0A91AB;
+    border-width: 1px;
+    margin-left: 2%;
+}
+aside hr {
+    height: 2px;
+    border: none;
+    background-color: #0A91AB;
+}
+.textoTienda{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.textoTienda h2{
+    align-self: center;
+    color: #0A91AB; 
+}
+
+.textoTienda h4{
+    margin-bottom: 0;
+}
+.textoTienda p{
+    margin-top: 4%;
+}
+.xtralife {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+.amazon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+aside img{
+    width: 40%;
+    margin: 0;
+    margin-top: 4%;
+    margin-left: 25%;
+}
 
 /*Cambio de pagina, contactos*/
+
 #formContacto{
     display: flex;
     flex-direction: row;
@@ -294,12 +602,14 @@ footer{
     margin-top: 30px;
     flex-wrap: wrap;
 }
+
 #map{
     border-style: solid;
     width: 600px;
     height: 680px;
 
 }
+
 #direccion{
     display: flex;
     flex-direction: row;
@@ -308,9 +618,11 @@ footer{
     font-weight: bold;
     color: #139ed8;
 }
+
 #direccion img{
     margin: 5%;
 }
+
 form{
     
     width: 500px;
@@ -319,21 +631,25 @@ form{
     padding: 10px;
     border-style: solid;
 }
+
 form p{
     color: #139ed8;
     font-weight: bold;
 }
+
 form hr{
     border: none;
     background-color: #139ed8;
     border-color: #139ed8;
     height: 1%;
 }
+
 input{
     width: 96%;
     padding: 10px;
     border: 1px solid #ccc;
 } 
+
 input[type="submit"]{
     width: 100px;
     background-color: #139ed8;
@@ -341,3 +657,7 @@ input[type="submit"]{
     cursor: pointer;
     float: right;
 }
+
+
+
+  
